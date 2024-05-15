@@ -1,3 +1,5 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
 .App {
   text-align: center;
 }
@@ -32,7 +34,35 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.ipad_back {
+  width: 70%;
+  max-width: 631px;
+  height: 805px;
+  border-radius: 50px;
+  background-color: #3395ff;
+  position: relative;
+}
+
+.ipad_front {
+  display: inline-flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0px;
+  left: 430px;
+  width: 70%;
+  max-width: 631px;
+  height: 805px;
+  border-radius: 50px;
+  background-color: red;
+}
+
+.application {
+  position: relative;
+  top: -200px;
 }
