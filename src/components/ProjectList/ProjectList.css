@@ -1,0 +1,38 @@
+/* todo: delete file if not needed */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+.ProjectListContainer {
+    width: 307px;
+    height: 100%;
+    margin: 20px 4px 0px 24px;
+
+}
+
+.ProjectListInnerContainer {
+    width: 275px;
+    text-align: left;
+    margin-bottom: 8px;
+
+}
+
+.PTImage {
+    padding: 8px 12px 8px 12px;
+}
+
+.PTypeLink {
+    cursor: pointer;
+    height: 40px;
+    color: #0D141C;
+    line-height: 21px;
+    font-size: 14px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.PTypeLink:hover {
+    background-color: #E8EDF2;
+    border-radius: 12px;
+}

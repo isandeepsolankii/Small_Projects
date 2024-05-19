@@ -1,0 +1,66 @@
+/* todo: delete file if not needed */
+.POContainer{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+   flex-direction: column;
+}
+
+.RProject{
+    text-align: left;
+    font-size: 22px;
+    margin-left: 7px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #0D141C;
+}
+
+.buttonContainer{
+   margin-right: 20px;
+}
+
+.Pbutton{
+    background-color: #E8EDF2;
+    padding: 20px;
+    margin: 10px;
+}
+
+.btncontainer{
+    display: inline-flex;
+    
+}
+
+.buttonText{
+    display: block;
+    margin-bottom: 0px;
+}
+
+.Pbutton:hover{
+    background-color: #a7aaad;
+    
+}
+
+.application{
+    margin-left: 7px;
+    width: 95%;
+    height: 95%;
+    background-color: #a7aaad;
+    border-radius: 12px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .btncontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttonContainer {
+    width: 100%; /* Make each button container take full width */
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+  }
+}

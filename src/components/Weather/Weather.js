@@ -40,25 +40,31 @@ function Weather() {
 			fetchWeather();
 		}
 	};
+
+	const clearInput = () =>{
+		setCity('')
+		setTemperature(null)
+	}
+
 	return (<div>
 
-		<div>
-			<h1>Weather App</h1>
-			<form onSubmit={handleCitySubmit}>
-				<label htmlFor="city">Enter City: </label>
+		<div className='weatherContainer'>
+			<h1 className='WTitle'>Get Your City Weather</h1>
 				<input
+				className='WInput'
 					type='text'
 					id="city"
 					placeholder='Enter City'
 					value={city}
 					onChange={handleCityChange}
+					onSubmit={handleCitySubmit}
 					required
 				/>
-			</form>
+				<span className="WclearIcon" onClick={clearInput}>&times;</span>
 			{temperature !== null ? (
-				<p>Temperature: {temperature}°C</p>
+				<p className='WResult'>Temperature: {temperature}°C</p>
 			) : (
-				<p>Please enter a valid city</p>
+				<p className='WResult'>Please enter a valid city</p>
 			)}
 		</div>
 	</div>)

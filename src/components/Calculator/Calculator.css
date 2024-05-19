@@ -1,1 +1,110 @@
-/* todo: delete file if not needed */
+.calculator {
+    display: inline-block;
+    padding: 20px;
+    margin: 50px;
+    width: 80%; /* Changed to 80% for better responsiveness */
+    max-width: 500px; /* Maximum width for larger screens */
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.calculator input {
+    width: calc(100% - 50px); /* Adjusted width to account for padding and margin */
+    margin-left: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 20px;
+    border-radius: 12px;
+    border: 0px;
+    padding: 10px 40px 10px 10px; /* Add right padding for the icon */
+    box-sizing: border-box;
+}
+
+.keypad button {
+    width: 18%;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+    border: 0px;
+    font-size: 22px;
+    box-sizing: border-box;
+}
+
+.keypad button:hover {
+    background-color: #dae4ee;
+    cursor: pointer;
+}
+
+.clearIcon {
+    position: relative;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 30px; /* Adjust icon size as needed */
+    color: black;
+}
+
+.opButton {
+    background-color: #1A80E5;
+}
+
+.keypad .equals {
+    width: 88%;
+}
+
+.opButton:hover {
+    background-color: #156abe;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .calculator {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 20px auto;
+    }
+
+    .calculator input {
+        width: calc(100% - 26px); /* Adjust width for smaller screens */
+        margin-left: 5px;
+    }
+
+    .keypad button {
+        width: 22%; /* Adjust button width for smaller screens */
+        padding: 8px;
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .keypad .equals {
+        width: calc(100% - 20px); /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 450px) {
+    .calculator {
+        width: 95%; /* Further adjust width for very small screens */
+        margin: 10px auto;
+    }
+
+    .calculator input {
+        width: calc(100% - 20px); /* Adjust width for very small screens */
+        margin-left: 5px;
+        font-size: 18px;
+    }
+
+    .keypad button {
+        width: 24%; /* Adjust button width for very small screens */
+        padding: 6px;
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .keypad .equals {
+        width: calc(100% - 10px); /* Adjust width for very small screens */
+    }
+
+    .clearIcon {
+        font-size: 24px; /* Adjust icon size for very small screens */
+    }
+}

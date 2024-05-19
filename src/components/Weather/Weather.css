@@ -1,1 +1,124 @@
-/* todo: delete file if not needed */
+/* Base styles */
+.weatherContainer {
+    margin: 50px;
+    text-align: left;
+}
+
+.WTitle {
+    margin: 50px 50px 50px 0px;
+}
+
+.WInput {
+    width: 70%; /* Adjusted width to account for padding and margin */
+    margin: 0px 50px ;
+    text-align: left;
+    font-size: 20px;
+    border-radius: 12px;
+    border: 0px;
+    padding: 10px 40px 10px 10px; /* Add right padding for the icon */
+    box-sizing: border-box;
+}
+
+.WResult {
+    background-color: #F0F0F0;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+    color: #0D141C;
+    line-height: 21px;
+    font-size: 18px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 253px;
+    position: relative;
+    left: 40px;
+}
+
+.WclearIcon {
+    position: relative;
+    top: 50%;
+    left: -80px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 30px; /* Adjust icon size as needed */
+    color: black;
+}
+
+/* Media queries for responsiveness */
+
+/* For small screens */
+@media (max-width: 600px) {
+    .weatherContainer {
+        margin: 20px;
+    }
+
+    .WTitle {
+        margin: 20px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .WInput {
+        width: 90%;
+        margin: 0px 10px 20px 10px;
+        font-size: 18px;
+        padding: 8px 35px 8px 8px;
+    }
+
+    .WclearIcon {
+        left: -60px;
+        font-size: 24px;
+    }
+}
+
+/* For medium screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .weatherContainer {
+        margin: 30px;
+    }
+
+    .WTitle {
+        margin: 30px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .WInput {
+        width: 80%;
+        margin: 0px 30px 30px 30px;
+        font-size: 18px;
+        padding: 9px 38px 9px 9px;
+    }
+
+    .WclearIcon {
+        left: -70px;
+        font-size: 28px;
+    }
+}
+
+/* For large screens */
+@media (min-width: 1025px) {
+    .weatherContainer {
+        margin: 50px;
+    }
+
+    .WTitle {
+        margin: 50px;
+        font-size: 32px;
+    }
+
+    .WInput {
+        width: 70%;
+        margin: 0px 50px 50px 50px;
+        font-size: 20px;
+        padding: 10px 40px 10px 10px;
+    }
+
+    .WclearIcon {
+        left: -80px;
+        font-size: 30px;
+    }
+}
+

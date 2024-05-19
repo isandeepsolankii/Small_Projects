@@ -25,7 +25,7 @@ function BoaredGame() {
 	return (
 		<>
 			<div className="body_container">
-				<h1>Let's find you something to do</h1>
+				<h2>Let's find you something to do</h2>
 				<button onClick={getActivity} className="TaskButton">
 					Get Activity{" "}
 				</button>

@@ -1,1 +1,44 @@
 /* todo: delete file if not needed */
+.MembersList {
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px;
+  color: #0d141c;
+  line-height: 21px;
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 253px;
+  position: relative;
+  left: 40px;
+}
+
+.TInput {
+  width: 70%; /* Adjusted width to account for padding and margin */
+  margin: 0px 50px;
+  text-align: left;
+  font-size: 20px;
+  border-radius: 12px;
+  border: 0px;
+  padding: 10px 10px 10px 10px; /* Add right padding for the icon */
+  box-sizing: border-box;
+}
+
+.GButton {
+  margin: 10px;
+  border-radius: 12px;
+  background-color: #1a80e5;
+  color: white;
+  font-weight: 400;
+}
+
+.GButton:hover {
+  background-color: #1a80e5;
+}
+
+.SelectedMember h5 {
+  display: inline;
+}
